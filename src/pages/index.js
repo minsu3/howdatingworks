@@ -1,22 +1,10 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import "../styles/home.css";
-import "../images/mainLogo.png";
+import mainLogo from "../images/mainLogo.png";
+import banner from "../images/banner.jpg";
 import styles from "../styles/homepage.module.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export const query = graphql`
-  query {
-    fileName: file(relativePath: { eq: "images/mainLogo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
 
 function HeaderFunction() {
   var x = document.getElementById("myTopnav");
@@ -33,12 +21,11 @@ const IndexPage = () => {
       <div>
         <div className={styles.header}>
           <div className={styles.topnav} id="myTopnav">
-            <a href="#" className={styles.mainLogo}>
-              <img src="mainLogo.png" />
-            </a>
-            <a href="#">News</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
+            <img src={mainLogo} alt="" />
+            <a href="/coaching">Coaching</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+            <a href="/about">About</a>
             <a className={styles.icon} onClick={HeaderFunction}>
               <FontAwesomeIcon icon={faBars} />
             </a>
@@ -46,14 +33,14 @@ const IndexPage = () => {
         </div>
 
         <div className={styles.main}>
-          <h2 style={{ fontSize: "50px", color: "white" }}>How Dating Works</h2>
+          <img src={banner} alt="" />
         </div>
 
         <div className={styles.content}>
           <div className={styles.leftcolumn}>
             <div className={styles.card}>
               <h2>TITLE HEADING</h2>
-              <h5>Title description, Dec 7, 2017</h5>
+              <h5>Title description, Dec 7, 2021</h5>
               <div className={styles.fakeimg}>Image</div>
               <p>Some text..</p>
               <p>
@@ -66,7 +53,7 @@ const IndexPage = () => {
 
             <div className={styles.card}>
               <h2>TITLE HEADING</h2>
-              <h5>Title description, Sep 2, 2017</h5>
+              <h5>Title description, Sep 2, 2021</h5>
               <div className={styles.fakeimg}>Image</div>
               <p>Some text..</p>
               <p>
@@ -79,7 +66,7 @@ const IndexPage = () => {
 
             <div className={styles.card}>
               <h2>TITLE HEADING</h2>
-              <h5>Title description, Sep 2, 2017</h5>
+              <h5>Title description, Sep 2, 2021</h5>
               <div className={styles.fakeimg}>Image</div>
               <p>Some text..</p>
               <p>
@@ -93,7 +80,7 @@ const IndexPage = () => {
 
           <div className={styles.rightcolumn}>
             <div className={styles.card}>
-              <h2>About Me</h2>
+              <h2>About Blair</h2>
               <div className={styles.fakeimg} style={{ height: "100px" }}>
                 Image
               </div>
@@ -112,7 +99,7 @@ const IndexPage = () => {
             </div>
 
             <div className={styles.card}>
-              <h3>Follow Me</h3>
+              <h3>Follow on Social Media</h3>
               <p>Some text..</p>
             </div>
           </div>

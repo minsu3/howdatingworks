@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* Header/Blog Title */
+/* Blog Title */
 .header {
   top: 0;
   left: 0;
@@ -14,26 +14,31 @@
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(113, 164, 249);
+  background-color: rgb(6, 0, 65);
 }
 
 .topnav a {
-  float: left;
-  display: block;
+  float: right;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 26px;
   text-decoration: none;
   font-size: 17px;
+  vertical-align: middle;
+}
+
+.topnav img {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  width: 152px;
+  cursor: pointer;
 }
 
 .topnav a:hover {
   background-color: rgb(6, 0, 65);
   color: white;
-}
-
-.mainLogo {
-  background-color: #ddd;
 }
 
 .topnav a.active {
@@ -51,6 +56,15 @@
   .topnav a.icon {
     float: right;
     display: block;
+  }
+
+  .topnav img {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    width: 152px;
+    cursor: pointer;
   }
 }
 
@@ -72,10 +86,16 @@
 
 /* Main Title */
 .main {
-  padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: rgb(6, 0, 65);
+  background: #ddd;
+}
+
+.main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 /* Main Content */
@@ -128,6 +148,18 @@
   background: #ddd;
   margin-top: 1500px;
   bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 60px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    background: #ddd;
+    margin-top: 500px;
+    bottom: 0;
+  }
 }
 
 .footer p {
