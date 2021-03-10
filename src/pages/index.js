@@ -5,31 +5,14 @@ import banner from "../images/banner.jpg";
 import styles from "../styles/homepage.module.css";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-function HeaderFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+import Header from "../components/Header";
 
 const IndexPage = () => {
   return (
     <div>
-      <div>
+      <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.topnav} id="myTopnav">
-            <img src={mainLogo} alt="" />
-            <a href="/coaching">Coaching</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
-            <a href="/about">About</a>
-            <a className={styles.icon} onClick={HeaderFunction}>
-              <FontAwesomeIcon icon={faBars} />
-            </a>
-          </div>
+          <Header />
         </div>
 
         <div className={styles.main}>
@@ -105,6 +88,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
+
       <div className={styles.footer}>
         <div>Footer</div>
       </div>
