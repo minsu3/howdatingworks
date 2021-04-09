@@ -1,11 +1,10 @@
 import * as React from "react";
 import "../styles/home.css";
-import mainLogo from "../images/mainLogo.png";
-import banner from "../images/banner.jpg";
+// import mainLogo from "../images/mainLogo.png";
+import banner from "../images/banner.jpeg";
 import styles from "../styles/homepage.module.css";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Header from "../components/Header";
+import Header from "../components/header";
+// import Footer from "../components/footer";
 
 const IndexPage = () => {
   return (
@@ -21,8 +20,8 @@ const IndexPage = () => {
 
         <div className={styles.content}>
           <div className={styles.leftcolumn}>
-            <div className={styles.card}>
-              <h2>TITLE HEADING</h2>
+            <div className={styles.leftcard}>
+              <h2>Dating Solutions for Men</h2>
               <h5>Title description, Dec 7, 2021</h5>
               <div className={styles.fakeimg}>Image</div>
               <p>Some text..</p>
@@ -34,7 +33,7 @@ const IndexPage = () => {
               </p>
             </div>
 
-            <div className={styles.card}>
+            <div className={styles.leftcard}>
               <h2>TITLE HEADING</h2>
               <h5>Title description, Sep 2, 2021</h5>
               <div className={styles.fakeimg}>Image</div>
@@ -47,7 +46,7 @@ const IndexPage = () => {
               </p>
             </div>
 
-            <div className={styles.card}>
+            <div className={styles.leftcard}>
               <h2>TITLE HEADING</h2>
               <h5>Title description, Sep 2, 2021</h5>
               <div className={styles.fakeimg}>Image</div>
@@ -62,7 +61,7 @@ const IndexPage = () => {
           </div>
 
           <div className={styles.rightcolumn}>
-            <div className={styles.card}>
+            <div className={styles.rightcard}>
               <h2>About Blair</h2>
               <div className={styles.fakeimg} style={{ height: "100px" }}>
                 Image
@@ -72,7 +71,7 @@ const IndexPage = () => {
               </p>
             </div>
 
-            <div className={styles.card}>
+            <div className={styles.rightcard}>
               <h3>Popular Post</h3>
               <div className={styles.fakeimg}>Image</div>
               <br />
@@ -81,17 +80,17 @@ const IndexPage = () => {
               <div className={styles.fakeimg}>Image</div>
             </div>
 
-            <div className={styles.card}>
+            <div className={styles.rightcard}>
               <h3>Follow on Social Media</h3>
               <p>Some text..</p>
             </div>
           </div>
         </div>
       </div>
-
+      {/* 
       <div className={styles.footer}>
         <div>Footer</div>
-      </div>
+      </div> */}
     </div>
   );
 };
