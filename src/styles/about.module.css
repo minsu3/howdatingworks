@@ -30,3 +30,11 @@
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
+.content {
+  box-sizing: border-box;
+}
+
+.content p {
+  padding: 50px;
+}

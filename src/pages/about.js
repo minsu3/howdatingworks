@@ -7,8 +7,8 @@ const About = () => {
     <div className={styles.container}>
       <Header />
       <div className={styles.app}>
-        <div>
-          <h1>About</h1>
+        <div className={styles.content}>
+          <h1>About Blair</h1>
           <div className={styles.fakeimg}>Image</div>
           <p>
             Blair is a dating and relationship coach who helps men achieve their

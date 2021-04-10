@@ -4,8 +4,8 @@ html,
 body {
   padding: 0 !important;
   margin: 0 !important;
-  background-color: white;
-  font-family: "Mandali", sans-serif;
+  background-color: white !important;
+  font-family: "Mandali", sans-serif !important;
 }
 
 a {
