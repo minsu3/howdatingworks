@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  height: 100%;
+  background-color: rgb(227, 236, 255);
+}
+
+.app {
+  padding: 40px;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 75%;
+  background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .app {
+    width: 80%;
+  }
+}

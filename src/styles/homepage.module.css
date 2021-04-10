@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  background-color: rgb(6, 0, 65);
-}
-
 /* Navigation Bar */
 .header {
   top: 0;
@@ -75,7 +71,22 @@
 .main {
   font-size: 40px;
   text-align: center;
-  background: #ddd;
+  padding: 160px;
+  background-color: rgb(227, 236, 255);
+}
+
+.main h1 {
+  width: 60%;
+  font-size: 60px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.main a {
+  font-size: 30px;
+  border-bottom: 1px solid black;
+  padding: 0;
+  text-decoration: none;
 }
 
 .main img {
@@ -114,23 +125,25 @@
 
 /* Add a card effect for articles */
 .leftcard {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   padding: 20px;
   margin-left: 0px;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 5px;
+  box-shadow: 10px 5px 5px #ddd;
 }
 
 .rightcard {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   padding: 20px;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 5px;
+  box-shadow: 10px 5px 5px #ddd;
 }
 
 /* Clear floats after the columns */
