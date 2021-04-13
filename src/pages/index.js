@@ -1,91 +1,68 @@
 import * as React from "react";
+import Helmet from "react-helmet";
 import "../styles/home.css";
-// import mainLogo from "../images/mainLogo.png";
 import styles from "../styles/homepage.module.css";
 import Header from "../components/header";
-// import Footer from "../components/footer";
+import favicon from "../images/hdw.png";
 
 const IndexPage = () => {
   return (
     <div>
-      <div className={styles.header}>
-        <Header />
-      </div>
+      <Helmet>
+        <title>How Dating Works</title>
+        <link rel="icon" href={favicon} />
+      </Helmet>
+      <Header />
+      <section className={styles.first}>
+        <h1 style={{ userSelect: "none" }}>
+          MEET, DATE, AND KEEP THE WOMAN OF YOUR DREAMS.
+        </h1>
+        <a href="#" style={{ userSelect: "none" }}>
+          Book A Session With Blair
+        </a>
+      </section>
 
-      <div className={styles.main}>
-        <h1>How to Meet, Date, and Keep the Women You've Always Wanted</h1>
-
-        <a href="#">Book Your Enlightenment Today</a>
-      </div>
-
-      <div className={styles.content}>
-        <div className={styles.leftcolumn}>
-          <div className={styles.leftcard}>
-            <h2>Dating Solutions for Men</h2>
-            <h5>Title description, Dec 7, 2021</h5>
-            <div className={styles.fakeimg}>Image</div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
-            </p>
-          </div>
-
-          <div className={styles.leftcard}>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2021</h5>
-            <div className={styles.fakeimg}>Image</div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
-            </p>
-          </div>
-
-          <div className={styles.leftcard}>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2021</h5>
-            <div className={styles.fakeimg}>Image</div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
-            </p>
-          </div>
+      <section className={styles.second}>
+        <div className={styles.secondTitle} style={{ userSelect: "none" }}>
+          HOW I HELP YOU BE ATTRACTIVE, MEET WOMEN, GET DATES, MEET YOUR DREAM
+          GIRL, AND LIVE HAPPILY EVER AFTER
         </div>
+        <div className={styles.fakeimg}>Image</div>
+      </section>
 
-        <div className={styles.rightcolumn}>
-          <div className={styles.rightcard}>
-            <h2>About Blair</h2>
-            <div className={styles.fakeimg} style={{ height: "100px" }}>
-              Image
-            </div>
-            <p>
-              Some text about me in culpa qui officia deserunt mollit anim..
-            </p>
-          </div>
-
-          <div className={styles.rightcard}>
-            <h3>Popular Post</h3>
-            <div className={styles.fakeimg}>Image</div>
-            <br />
-            <div className={styles.fakeimg}>Image</div>
-            <br />
-            <div className={styles.fakeimg}>Image</div>
-          </div>
-
-          <div className={styles.rightcard}>
-            <h3>Follow on Social Media</h3>
-            <p>Some text..</p>
-          </div>
+      <section className={styles.third}>
+        <h1 style={{ userSelect: "none" }}>BOOK A SESSION WITH BLAIR</h1>
+        <p style={{ userSelect: "none" }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
+          minim veniam, quis nostrud.
+        </p>
+        <div className={styles.formContainer}>
+          <input placeholder="Your First Name" />
+          <input placeholder="Your Email Address" />
+          <button>Submit</button>
         </div>
-      </div>
+      </section>
+
+      <section className={styles.fourth}>
+        <h1 style={{ userSelect: "none" }}>MORE STUFF ABOUT STUFF</h1>
+        <p style={{ userSelect: "none" }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <footer className={styles.footer}>
+        <p>&copy; 2021 Blair Meehan All Right Reserved</p>
+        <p>
+          Developed by <a href="#">Minsu K</a>
+        </p>
+      </footer>
     </div>
   );
 };
