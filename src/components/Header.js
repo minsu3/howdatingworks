@@ -2,11 +2,16 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import brand from "../images/brand.svg";
+import homebutton from "../images/homebutton.svg";
 
 const Header = () => {
   return (
-    <div style={{ borderBottom: "2px solid #ddd" }}>
+    <div
+      style={{
+        borderBottom: "2px solid #ddd",
+        fontFamily: "Mandali, sans serif",
+      }}
+    >
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -14,11 +19,7 @@ const Header = () => {
         style={{ backgroundColor: "white" }}
       >
         <Navbar.Brand href="/">
-          <img
-            src={brand}
-            alt=""
-            style={{ width: "200px", marginLeft: "5vw" }}
-          />
+          <img src={homebutton} alt="" style={{ width: "100px" }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -35,7 +36,7 @@ const Header = () => {
             >
               About
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               href="/about"
               style={{
                 fontSize: "18px",
@@ -45,7 +46,7 @@ const Header = () => {
               }}
             >
               Dating Bootcamp
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               href="/coaching"
               style={{
@@ -69,7 +70,7 @@ const Header = () => {
               Blog
             </Nav.Link>
             <Nav.Link
-              href="/sign-in"
+              href="/contact"
               className="mr-sm-2"
               style={{
                 fontSize: "18px",
