@@ -12,7 +12,7 @@ const IndexPage = () => {
         <title>How Dating Works</title>
         <link rel="icon" href={favicon} />
       </Helmet>
-      <Header />
+      {/* <Header />
       <section className={styles.first}>
         <h1 style={{ userSelect: "none" }}>
           MEET, DATE, AND KEEP THE WOMAN OF YOUR DREAMS.
@@ -55,13 +55,13 @@ const IndexPage = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </section>
+      </section> */}
 
       <footer className={styles.footer}>
         <p>&copy; 2021 Blair Meehan All Right Reserved</p>
-        <p>
+        {/* <p>
           Developed by <a href="#">Minsu K</a>
-        </p>
+        </p> */}
       </footer>
     </div>
   );
