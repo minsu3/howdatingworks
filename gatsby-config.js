@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: "howdatingworks",
-    siteUrl: "https://howdatingworks.com",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
